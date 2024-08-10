@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda de cuentas de streaming con diferentes servicios como Netflix y Spotify.">
+    <title>Tienda de Cuentas de Streaming</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .contact-button {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .contact-button:hover {
+            background-color: #0056b3;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            margin-top: 50px;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .product {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .product h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <button class="contact-button" onclick="contactSeller()">Contactar Vendedor</button>
+    <div class="header">
+        <h1>Tienda de Cuentas de Streaming</h1>
+    </div>
+    <div class="container">
+        <div class="product">
+            <h2>Cuenta de Netflix</h2>
+            <p>Descripción de la cuenta de Netflix.</p>
+            <p>Precio: $10</p>
+        </div>
+        <div class="product">
+            <h2>Cuenta de Spotify</h2>
+            <p>Descripción de la cuenta de Spotify.</p>
+            <p>Precio: $5</p>
+        </div>
+        <!-- Añade más productos aquí -->
+    </div>
+
+    <script>
+        function contactSeller() {
+            if (confirm('¿Deseas contactar al vendedor?')) {
+                window.open('https://t.me/galindo', '_blank');
+            }
+        }
+    </script>
+</body>
+  </html>
+  
